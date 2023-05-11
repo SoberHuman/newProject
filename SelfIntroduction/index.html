@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/personal.css"/>
+		
+		
+		
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded",function(){
+				var obox = document.querySelector(".obox");
+				var box = obox.querySelectorAll(".box");
+				var icon = document.querySelector(".icon");
+				var obox2 = document.querySelector(".obox2");
+				var list = document.querySelector(".list");
+				var oli = list.querySelectorAll("li");   
+				var a = 0;
+				var d = 0;
+				
+//				var useName = document.querySelector("#userName");
+//				var Email = document.querySelector("#Email");
+//				var phone = document.querySelector("#phone");
+//				var btn = document.querySelector("#btn");
+				
+//				var scale = document.querySelectorAll(".scale");//
+				var about = document.querySelector(".about");
+				var words =  document.querySelector(".words");
+//				
+				var more = document.querySelector(".more");
+				var many = document.querySelector(".many");
+//				
+//				
+				var page2 = document.querySelector(".page2");
+				var aboutme = document.querySelector(".aboutme");
+
+				var spin = document.querySelector(".spin");
+				var spin2 = document.querySelector(".spin2");
+				var spin11 = document.querySelector(".spin11");
+				var spin22 = document.querySelector(".spin22");
+				var spin111 = document.querySelector(".spin111");
+				var spin222 = document.querySelector(".spin222");
+				
+				var ability3 = document.querySelector(".ability3");
+				var myp = ability3.querySelectorAll("p");
+				var span = ability3.querySelectorAll("span");
+				var bb = ability3.querySelectorAll("b");
+				
+				
+				var mybox5 = document.querySelector(".mybox5");
+				var info = document.querySelector(".info");
+				
+				var aboutme2 = document.querySelector(".aboutme2");
+				var ability1 = document.querySelector(".ability1");
+				var ability2 = document.querySelector(".ability2");
+				var progress_bar = document.querySelector(".progress_bar");
+				var progress_bar2 = document.querySelector(".progress_bar2");
+				var progress_bar3 = document.querySelector(".progress_bar3");
+				
+				var square = document.querySelector(".square");
+				var span2 = square.querySelectorAll("span");
+				
+				
+				
+				
+				
+				function fn(){
+					for(var j = 0;j < box.length;j++){
+							if(j == i){
+								oli[j].className = "my";
+							}
+							if(j != i){
+								oli[j].className = "other";
+							}
+							
+						}
+				}
+				//滚动
+				window.onmousewheel = wheel;
+				document.addEventListener("DOMMouseScroll",wheel,false);
+				
+				var i = 0;
+				setTimeout(function(){
+					document.body.scrollTop = document.documentElement.scrollTop = 0;
+				},100)
+				
+				function wheel(e){
+					window.onmousewheel = null;
+					var e = e || event;
+					var height = box[0].offsetHeight;
+					
+					if(e.wheelDelta < 0 || e.detail > 0){
+						oli[0].className = "other";
+						
+						i++;
+						if(i == box.length){
+							i = box.length - 1;
+						}
+						
+						fn();
+//						if(i == 1){
+//							page2.style.animation = "aboutimg 1s linear forwards";
+//							aboutme.style.animation = "aboutsize 1s linear forwards";
+//						}
+//						if(i == 2){
+//							spin.style.animation = "abilityscale1 1s linear forwards";
+//							spin2.style.animation = "abilityscale1 1s linear forwards";
+//							spin11.style.animation = "abilityscale2 1s linear forwards";
+//							spin22.style.animation = "abilityscale2 1s linear forwards";
+//							spin111.style.animation = "abilityscale3 1s linear forwards";
+//							spin222.style.animation = "abilityscale3 1s linear forwards";
+//							myp[0].style.animation = 'ap1 1s linear forwards';
+//							myp[1].style.animation = 'ap2 1s linear forwards';
+//							myp[2].style.animation = 'ap3 1s linear forwards';
+//							myp[3].style.animation = 'ap4 1s linear forwards';
+//							myp[4].style.animation = 'ap5 1s linear forwards';
+//						}
+//						if(i == 3){
+//							words.style.animation =  "myword 2s linear forwards";
+//						}
+						
+						if(i == 1){
+							page2.className = "page2 ani1";
+							aboutme.className = "aboutme ani2"
+						}
+						if(i == 2){
+							
+							spin.className = "spin ani3";
+							spin2.className = "spin2 ani4";
+							spin11.className = "spin11 ani5";
+							spin22.className = "spin22 ani6";
+							spin111.className = "spin111 ani7";
+							spin222.className = "spin222 ani8";
+							myp[0].className = "abi1";
+							myp[1].className = "abi2";
+							myp[2].className = "abi3";
+							myp[3].className = "abi4";
+							myp[4].className = "abi5";
+							
+							
+							
+							
+							
+							//响应式页面
+							if(document.body.offsetWidth <= 640){
+								//清空pc端不需要的样式
+								ability1.style.display = "none";
+								ability2.style.display = "none";
+								for(var s = 0; s < span.length; s++){
+									span[s].style.display = "none";
+									myp[s].removeAttribute("class");
+//									console.log("abi" + (s+1))
+								}
+								
+								
+								//进度条
+								progress_bar.style.display = "block";
+								progress_bar2.style.display = "block";
+								progress_bar3.style.display = "block";
+								
+								//
+								var mypb = document.querySelectorAll(".mypb");
+								var p1 = document.querySelectorAll(".p1");
+								var w = 0;
+								var v = 0;
+								var n = 0;
+								var t1 = setInterval(function(){
+									w++;
+									mypb[0].style.width = w+"%";
+									p1[0].innerHTML = w+"%";
+									if(w == 90){
+										clearInterval(t1);
+									}
+								},20)
+								
+								
+
+								var t2 = setInterval(function(){
+									v++;
+									mypb[1].style.width = v+"%";
+									p1[1].innerHTML = v+"%";
+									if(v == 80){
+										clearInterval(t2);
+									}
+								},20)
+								
+								
+								var t3 = setInterval(function(){
+									n++;
+									mypb[2].style.width = n+"%";
+									p1[2].innerHTML = n+"%";
+									if(n == 70){
+										clearInterval(t3);
+									}
+								},20)
+								
+								
+								
+								
+							}
+						}
+						if(i == 3){
+							words.className = "words words2";
+						}
+						if(i == 4){
+							mybox5.className = "mybox5 end1";
+							info.className = "info end2";
+						}
+//						console.log(i);
+						
+						
+					}else{
+						i--;
+						if(i < 0){
+							i = 0;
+						}
+//						console.log(i);
+						
+						fn();
+					}
+					
+					obox.style.top = -i*height +"px";
+//					for(var k = 0;k < box.length;k++){
+//						box[k].className = "box ";
+//					}
+//					box[i].className = "box active";
+					setTimeout(function(){
+						window.onmousewheel =  wheel;
+					},1500)
+				}
+				
+				
+				//图标
+				icon.onclick = function(){
+					fn();
+					d++;
+					if(d == 1 ){
+						list.style.right = "5%";
+					}else{
+						list.style.right = "-20%";
+						d = 0;
+					}
+					
+				}
+				//目录
+				var height = box[0].offsetHeight;
+				
+				oli[0].onclick = function(){
+					obox.style.top = 0 +"px";
+					this.className = "my";
+					oli[1].className = "other";
+					oli[2].className = "other";
+					oli[3].className = "other";
+					oli[4].className = "other";
+					i = 0;
+				}
+				oli[1].onclick =  function(){
+					obox.style.top = -1*height +"px";
+					this.className = "my";
+					oli[0].className = "other";
+					oli[2].className = "other";
+					oli[3].className = "other";
+					oli[4].className = "other";
+					i = 1;
+				}
+				oli[2].onclick = function(){
+					obox.style.top = -2*height +"px";
+					this.className = "my";
+					oli[0].className = "other";
+					oli[1].className = "other";
+					oli[3].className = "other";
+					oli[4].className = "other";
+					i = 2;
+				}
+				oli[3].onclick = function(){
+					obox.style.top = -3*height +"px";
+					this.className = "my";
+					oli[0].className = "other";
+					oli[1].className = "other";
+					oli[2].className = "other";
+					oli[4].className = "other";
+					i = 3;
+				}
+				oli[4].onclick = function(){
+					obox.style.top = -4*height +"px";
+					this.className = "my";
+					oli[0].className = "other";
+					oli[1].className = "other";
+					oli[2].className = "other";
+					oli[3].className = "other";
+					i = 4;
+				}
+				
+				
+				
+				//个人信息
+				
+				aboutme.onmouseenter = function() {
+					aboutme2.style.display = "block";
+					aboutme.style.display = "none";
+				}
+				
+				aboutme2.onmouseleave = function() {
+				    aboutme2.style.display = "none";
+				    aboutme.style.display = "block";
+				}
+			
+				
+				
+				
+				//about me
+				about.onclick = function(){
+					var h = box[0].offsetHeight;
+					obox.style.top = -1*height +"px";
+//					page2.style.animation = "aboutimg 1s linear forwards";
+//					aboutme.style.animation = "aboutsize 1s linear forwards";
+					page2.className = "page2 ani1";
+					aboutme.className = "aboutme ani2";
+					oli[1].className ="my";
+					oli[0].className ="other";
+				}
+				
+				
+				//more
+				more.onclick = function(e){
+					var e = e ||event;
+					many.style.display = "block";
+	
+					document.body.style.overflow = "visible";
+					obox.style.display = "none";
+					obox2.style.display = "none";
+					list.style.display = "none";
+					
+					square.onmouseenter = function(){
+						span2[0].className = "twig1";
+						span2[1].className = "twig2";
+						
+						setTimeout(function(){
+							square.onclick = function(){
+								document.body.style.overflow = "hidden";
+								obox.style.display = "block";
+								obox2.style.display = "block";
+								list.style.display = "block";
+								many.style.display = "none";
+							}
+						},1000)
+						
+					}
+					square.onmouseleave = function(){
+						span2[0].removeAttribute("class");
+						span2[1].removeAttribute("class");
+						
+					}
+					
+					
+//					window.onmousewheel = null;
+//					document.addEventListener("DOMMouseScroll",null,false);
+//					//屏蔽ctrl+R，F5键，ctrl+F5键F3键 验证
+//					if ((e.ctrlKey == true && e.keyCode == 82) || (e.keyCode == 116) || (e.ctrlKey == true && e.keyCode == 116) || (e.keyCode == 114)){
+//						e.keyCode = 0;
+//						alert("当前页面不能刷新! ");
+//						e.returnValue = false;
+//						e.cancelBubble = true;
+//						return false;
+//					}
+				}
+				
+				
+				
+				
+				
+				//响应式页面
+				if(document.body.offsetWidth <= 640){
+								
+				}
+			})
+		</script>
+	</head>
+	<body>
+		<!--more-->
+		<div class="many">
+			<p><img src="img/size.png"/></p>
+			<div class="square">
+				<span></span>
+				<span></span>
+			</div>
+			<ul>
+				<li><img src="img/more/猜拳游戏.png"/></li>
+				<li><img src="img/more/画板涂鸦.png"/></li>
+				<li><img src="img/more/小苍蝇起飞.png"/></li>
+				<li><img src="img/more/抽奖活动.png"/></li>
+				<li><img src="img/more/火柴人.png"/></li>
+				<li><img src="img/more/计算机.png"/></li>
+			</ul>
+		</div>
+		
+		<!--图标、目录-->
+		<div bigbox>
+			<div class="obox2"><div class="icon">☋</div></div>
+			<ul class="list">
+				<li>简历◀</li>
+				<li>关于◀</li>
+				<li>能力◀</li>
+				<li>作品◀</li>
+				<li>联系◀</li>
+			</ul>
+			
+			
+			
+			<div class="obox">
+				
+				<div class="box ">
+					<div class="about">
+						<span>ABOUT ME</span>
+					</div>
+					<div class="grjj">
+						<span>个人简介</span>
+					</div>
+					<div class="page1"></div>
+					
+				</div>
+				
+				
+				
+				<div class="box">
+					<p class="motto">—— —— About me</p>
+					<div class="jz">
+						<div class="page2">
+							<img src="img/head3.png" alt="" />
+						</div>
+						<div class="aboutme">
+							<p>姓名：</p><span>何毅雯</span>
+							<p>性别：</p><span>女</span>
+							<p>出生年月：</p><span>2001-01</span>
+							<p>籍贯：</p><span>广西北海市</span>
+							<p>民族：</p><span>汉</span>
+							<p>政治面貌：</p><span>共青团员</span>
+							<p>身高/体重：</p><span>163cm/55kg</span>
+							<p>☁</p>
+							
+						</div>
+						
+						<div class="aboutme2">
+							<p>就读院校：</p><span>广西职业技术学院</span>
+							<p>专业：</p><span>计算机网络安全技术</span>
+							<p>求职意向：</p><span>java web开发</span>
+							<p>期望薪水：</p><span>面议</span>
+							<p>工作年限：</p><span>xx年</span>
+							<p>现居地：</p><span>南宁西乡塘</span>
+							<p>到岗时间：</p><span>1周内</span>
+							<p>☁</p>
+						</div>
+						
+						
+					</div>
+				</div>
+					
+					
+					
+				<div class="box">
+					<p class="thor">capacity——  ——</p>
+					
+					
+					<!--进度条-->
+					<div class="progress_bar">
+						<h3>CSS/HTML</h3>
+						<div class="pb">
+							<div class="mypb"></div>
+						</div>
+						<p  class="p1">0%</p>
+					</div>
+					<div class="progress_bar2">
+						<h3>javascript/jQuery</h3>
+						<div class="pb">
+							<div class="mypb"></div>
+						</div>
+						<p  class="p1">0%</p>
+					</div>
+					<div class="progress_bar3">
+						<h3>MySQL/java
+						</h3>
+						<div class="pb">
+							<div class="mypb"></div>
+						</div>
+						<p class="p1">0%</p>
+					</div>
+		
+		
+					<!--饼图-->
+					<div class="ability1">
+						<div class="scale">
+							<div class="spin"></div>
+							<div class="spin2"></div>
+							<div class="spin3">HTML</div>
+						</div>
+						<div class="scale">
+							<div class="spin11"></div>
+							<div class="spin22"></div>
+							<div class="spin3">CSS</div>
+						</div>
+						<div class="scale">
+							<div class="spin111"></div>
+							<div class="spin222"></div>
+							<div class="spin3">javascript</div>
+						</div>
+					</div>
+					
+					
+					
+					<div class="ability2">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					
+					<div class="ability3">
+						<p>
+							<b>熟悉HTML、CSS/CSS3 、javascript/jQuery/AJAX语言</b>
+							<span></span>
+						</p>
+						<p>
+							<b>熟悉xxx、xxx、xxx框架</b>
+							<span></span>
+						</p>
+						<p>
+							<b>掌握SQL语言，熟悉MySQL、xxx等关系型数据库</b>
+							<span></span>
+						</p>
+				
+						<p>
+							<span></span>
+							<b>了解xxx、xxx等开源项目，熟练使用HBuilder、eclipse、SQLyog等开发工具</b>
+							
+						</p>
+						<p>
+							<span></span>
+							<b>熟悉linux基本操作</b>
+							
+						</p>
+					</div>
+				</div>
+				
+				
+				
+				<div class="box">
+					<div class="round1">
+						<div class="round01">猜拳游戏</div>
+						<div class="round01">画板涂鸦</div>
+						<div class="round01">小苍蝇起飞</div>
+					</div>
+					<div class="round2">
+						<div class="round02">银行系统</div>
+						<div class="round02">秒表</div>
+						<div class="round02">医院挂号系统</div>
+					</div>
+					<div class="round3">
+						<div class="round03">抽奖活动</div>
+						<div class="round03">火柴人</div>
+						<div class="round03">计算机</div>
+					</div>
+					
+					<div class="words">
+						<p>作</p>
+						<p>品</p>
+						<p>集</p>
+					</div>
+					<div class="more">
+						more
+					</div>
+					
+					<div class="mains">
+						
+					</div>
+				</div>
+				
+				
+				
+				<div class="box">
+					<div class="mybox5">
+						<p>—— ——留言</p>
+						<input type="text" placeholder="名字" id="userName"/>
+						<input type="text" placeholder="邮箱" id="Email" />
+						<input type="text" placeholder="电话"  id="phone"/>
+						<textarea name="" id="" placeholder="内容"></textarea>
+						<button id="btn">send</button>
+						
+					</div>
+					<div class="info">
+						<p>地址：广西南宁市和德公馆</p>
+						<p>邮箱: 2175429631@qq.com</p>
+						<p>电话：18377910891</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
