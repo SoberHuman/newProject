@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6e8dc6de-3f8a-4960-9fe2-fc82640aea08" name="变更" comment="111">
+      <change afterPath="$PROJECT_DIR$/.idea" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/HotelApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/dao" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/dao/AnnouncementDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/dao/CheckInDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/dao/CheckOutDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/dao/ClientConsumptionRecordDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/dao/ClientDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/dao/IncomeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/dao/MaintainDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/dao/ReservationDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/dao/RoomDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/dao/RoomTypeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/dao/StaffDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/dao/UserConsumptionRecordDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/dao/UsersDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/interceptor" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/interceptor/MyMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/interceptor/SessionInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/Announcement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/CheckOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/Checkin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/ClientConsumptionRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/Count.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/Income.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/Maintain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/Reservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/RoomType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/Roomrate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/UserConsumptionRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/model/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/querySql" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/querySql/CheckInQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/querySql/CheckOutQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/querySql/ClientConsumptionRecordQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/querySql/ClientQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/querySql/IncomeQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/querySql/MaintainQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/querySql/ReservationQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/querySql/UserConsumptionRecordQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/querySql/roomQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/querySql/userQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/AnnouncementServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/CheckInServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/CheckOutServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ClientConsumptionRecordServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ClientServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/IncomeServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/MaintainServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ReservationServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/RoomServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/RoomTypeServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/StaffServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/UserConsumptionRecordServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/UsersServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/aliyunMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/AjaxCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/AnnouncementServerCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/CheckInServerCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/CheckOutServerCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/ClientConsumptionRecordCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/ClientServerCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/IncomeServerCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/MaintainServerCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/MyWebAppConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/ReservationServerCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/RoomServerCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/RoomTypeServerCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/StaffServerCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/UserConsumptionRecordCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/server/ctrl/UsersServerCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/view" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/view/ctrl" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/soft/hotel/view/ctrl/toPageCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/数据库" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/数据库/建库语句" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/数据库/建库语句/1.数据库创建.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/数据库/建库语句/graduate.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/数据库/数据表详情" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/数据库/数据表详情/sql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/announcement" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/announcement/announcements.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/client" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/client/client.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/Stroke-Gap-Icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/Stroke-Gap-Icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/Stroke-Gap-Icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/Stroke-Gap-Icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gateway" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gateway/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gateway/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gateway/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gateway/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gateway/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gateway/jquery.bxslider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gateway/jquery.fancybox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gateway/jquery.mCustomScrollbar.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gateway/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gateway/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gateway/strock-icon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gateway/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gateway/style1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/index" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/index/indexStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/logistics" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/logistics/maintain.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/reservation" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/reservation/reservationOp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/reservation/userReservation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/room" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/room/roomInp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/room/roomOp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/roomtype" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/roomtype/roomtypeEdit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/roomtype/roomtypeOp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/staff" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/staff/LoginStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/users" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/users/userRegist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/users/users.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/Stroke-Gap-Icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/Stroke-Gap-Icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/Stroke-Gap-Icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/Stroke-Gap-Icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/038aca28-9925-46a7-942f-c17ac4e5c032null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/0412afbc-50a6-4fc7-9afd-0359c0fbf525null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/04cda4e6-5dbc-4afb-bb4a-884d4fcd8096null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/05dd4eb7-558c-4fcc-aaeb-87c8712af61dnull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/0848e7bb-3b16-44cd-b539-7e07453399c6null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/0a4d2436-b990-4027-9f91-97a11c3ca00e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/0e05c299-589c-463c-94fe-5796a50f1d9fnull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/140f00d9-747b-4a21-895d-94bb56a0b159null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/141a8ce1-39ac-475e-9a7f-e3d4785190e3null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/14ab1e47-d5a3-4634-b4f1-c02582862e48null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/19527372-ef22-4410-95d2-c2f9724e19efnull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/223d4516-a947-4681-ac77-7ab81eb4ba50null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/2293e371-cee9-40df-a29f-d3d3173915e8null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/243e9ba9-afe4-4eea-bf36-9264e8a84a85null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/252a83f6-ba2a-461d-b209-531035257325null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/26f5c2c8-f86f-420f-ac0d-aa05519b9d9anull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/2a363118-8b30-486e-8c3d-27eca88005c9null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/3081c48a-0473-44ad-bbfe-bc274dca3650null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/346bbe1c-f9ea-4b36-8beb-93a356dccfc7null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/381c3bc9-d0dd-436b-af63-1a7d91bfaa8cnull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/43d035e4-4ffa-48da-9a26-d1c546f41330null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/5141ab85-648e-4fec-b770-a870af5a792bnull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/51c121f3-35ec-4b40-b88b-330839eb2832null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/54e0d8de-4c7c-4e07-83de-630dfd070b11null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/54f711d3-e4b7-4fcc-8715-338d98aa768enull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/598ecc1d-52aa-483f-bf88-e796b8c8b19e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/5b302231-144e-44c0-b41a-59be9a6bbcfcnull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/5b3ab644-4d95-46a2-85f7-cfd187acea8enull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/605d6d5e-5d99-4239-98bc-005bac3e81acnull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/60a441fc-1142-4c98-b996-d15224170013null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/6632d6f8-c89f-4e62-82f0-50059ce4df3enull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/6f05c2ff-d1ea-405f-980a-d8ed4ff18625null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/7725794b-4b00-4795-9361-1d3e9a9ffaca.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/7c5bc6ea-f5f1-481f-abd2-40eafae242d0null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/84c495f8-1a52-47e5-bc7b-e6d001c241cfnull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/86e2007f-26cd-47f0-94e0-66694bd96f76null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/878455aa-d99f-456e-b88f-0c17bdfbead5null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/87853611-a8d3-4c23-a0de-64953cd6eefenull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/88e5ef0c-e3ef-4524-8425-6167273854efnull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/92ae25b0-d1fc-4a4e-b3d0-96db1ef32eb7null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/970f9507-8f9b-4686-941c-f68e918b1703null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/983c1f83-7510-4377-9fb6-da27c25939f5null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/9b062ba8-07f0-4a28-8c3d-c6982ff3224fnull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/LoginBg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/a169b952-441f-41f4-b1c2-707ae83bd849null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/a5a80ff6-3dea-4f20-b485-20aab068fee4null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/add.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/c1ebb249-0b62-4ca1-a152-65ab0cfaf810null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/c3fcd9a1-4c29-4851-ab74-7345641addacnull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/c50eefea-630b-4a07-b6cd-379220049399null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/c56e48a1-ef81-48c1-b40d-c643150619c1null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/c9304d69-7d5f-42c8-90e5-6091e6a2faf9null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/cbcc786a-2b75-4868-801b-133f327073denull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/d079a402-cd23-4a88-be27-13c2650442d7null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/d47418b2-27bb-401b-9ad6-1ac54eb8e6be.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/d9244de5-8985-4b8d-87c0-c0826414e24cnull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/dba654d9-0f81-4de9-8d16-66d884913846null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/dbf853ab-047e-4e2f-b863-bf8f3fbf6791.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/dc452d06-939d-49b6-9aff-9c592083a9d3null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/drf1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/e523e9fe-4d55-447e-ab87-d587fc580800null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/e7643a84-f92b-45b4-a6a7-50a10773d246.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ee88ac04-960e-4022-bd71-acf220da8ccenull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/f78b64da-5f19-4a42-b401-f64c6fceab2dnull" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/calendar-disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/footerlogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/gall1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/gall2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/gall3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/gall4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/gall5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/gallbg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/icon-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/icon-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/icon-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/icon1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/icon2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/icon3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/icon4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/icon5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/inner-header2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/our1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/our2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/our3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/rooms10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/rooms11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/rooms4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/rooms5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/rooms6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/rooms7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/rooms8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/rooms9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/roomsgallery1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/roomsgallery2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/roomsgallery3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/roomsgallery4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/roomsgallery5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/roomsgallery6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/select-menu-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/side-logo-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/side-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/test1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/test2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/test3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/test4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gateway/test5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/logo3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/logo4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/logo5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/userimg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/userlogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/jquery-2.2.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/jquery.appear.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/jquery.bxslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/jquery.countTo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/jquery.easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/jquery.fancybox.pack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/jquery.mCustomScrollbar.concat.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/jquery.mixitup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gateway/zebra_datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/room" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/room/room.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/announcement" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/announcement/announcements.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/checkIn" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/checkIn/clientCheckInRecord.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/checkIn/clientCheckInRecordInp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/checkIn/userCheckInRecord.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/checkIn/userCheckInRecordInp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/checkOut" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/checkOut/clientCheckOutRecord.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/checkOut/clientCheckOutRecordInp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/checkOut/userCheckOutRecord.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/checkOut/userCheckOutRecordInp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/client" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/client/clientInp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/client/clientOperation.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/clientConsumptionRecord" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/clientConsumptionRecord/clientConsumptionRecordAll.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/clientConsumptionRecord/clientConsumptionRecordId.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/clientConsumptionRecord/clientConsumptionRecordInp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/gateway" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/gateway/gateway.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/gateway/userLogin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/gateway/userRegist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/gateway/userReservation.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/income" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/income/incomeAnalysis.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/income/incomeDate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/income/incomeMonth.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/income/incomeOp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/income/incomeOp2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/income/incomeStartAndStopDates.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/income/incomeYear.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/income/occupancyRate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/index" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/index/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/logistics" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/logistics/maintain.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/logistics/maintainInp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/reservation" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/reservation/reservationCheckIn.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/reservation/reservationInp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/reservation/reservationNoCheckIn.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/reservation/reservationOp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/reservation/reservationUnsubscribe.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/reservation/userReservation.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/room" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/room/roomInp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/room/roomOp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/room/roomStruts.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/room/roomTypeStruts.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/roomtype" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/roomtype/roomTypeEdit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/roomtype/roomTypeOp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/staff" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/staff/staffLogin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/test" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/test/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/userConsumptionRecord" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/userConsumptionRecord/userConsumptionRecordAll.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/userConsumptionRecord/userConsumptionRecordId.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/userConsumptionRecord/userConsumptionRecordInp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/users" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/users/usersInputOperation.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/users/usersOperation.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/test/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/soft" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/soft/hotel" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/soft/hotel/HotelApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/数据库" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/数据库/建库语句" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/数据库/建库语句/1.数据库创建.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/数据库/建库语句/graduate.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/数据库/数据表详情" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/数据库/数据表详情/sql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/HotelApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/ServletInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/dao" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/dao/AnnouncementDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/dao/CheckInDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/dao/CheckOutDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/dao/ClientConsumptionRecordDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/dao/ClientDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/dao/IncomeDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/dao/MaintainDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/dao/ReservationDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/dao/RoomDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/dao/RoomTypeDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/dao/StaffDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/dao/UserConsumptionRecordDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/dao/UsersDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/interceptor" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/interceptor/MyMvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/interceptor/SessionInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/Announcement.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/CheckOut.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/Checkin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/ClientConsumptionRecord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/Count.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/Income.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/Maintain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/Reservation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/Room.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/RoomType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/Roomrate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/Staff.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/UserConsumptionRecord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/model/Users.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/CheckInQuery$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/CheckInQuery$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/CheckInQuery$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/CheckInQuery$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/CheckInQuery$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/CheckInQuery$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/CheckInQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/CheckOutQuery$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/CheckOutQuery$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/CheckOutQuery$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/CheckOutQuery$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/CheckOutQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ClientConsumptionRecordQuery$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ClientConsumptionRecordQuery$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ClientConsumptionRecordQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ClientQuery$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ClientQuery$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ClientQuery$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ClientQuery$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ClientQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/IncomeQuery$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/IncomeQuery$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/IncomeQuery$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/IncomeQuery$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/IncomeQuery$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/IncomeQuery$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/IncomeQuery$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/IncomeQuery$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/IncomeQuery$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/IncomeQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/MaintainQuery$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/MaintainQuery$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/MaintainQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ReservationQuery$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ReservationQuery$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ReservationQuery$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ReservationQuery$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ReservationQuery$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ReservationQuery$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ReservationQuery$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/ReservationQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/UserConsumptionRecordQuery$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/UserConsumptionRecordQuery$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/UserConsumptionRecordQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/roomQuery$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/roomQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/userQuery$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/userQuery$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/userQuery$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/userQuery$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/userQuery$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/querySql/userQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/AnnouncementServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/CheckInServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/CheckOutServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ClientConsumptionRecordServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ClientServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/IncomeServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/MaintainServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ReservationServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/RoomServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/RoomTypeServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/StaffServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/UserConsumptionRecordServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/UsersServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/aliyunMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/AjaxCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/AnnouncementServerCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/CheckInServerCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/CheckOutServerCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/ClientConsumptionRecordCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/ClientServerCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/IncomeServerCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/MaintainServerCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/MyWebAppConfigurer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/ReservationServerCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/RoomServerCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/RoomTypeServerCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/StaffServerCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/UserConsumptionRecordCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/server/ctrl/UsersServerCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/view" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/view/ctrl" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/soft/hotel/view/ctrl/toPageCtrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations" afterDir="true" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$PROJECT_DIR$/../../../../maven-repertory" />
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../../../apache-maven-3.8.6/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2NiqxgQOrSGG3A9WLKz2pNTiRNc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Applications/project/code/i_code/project/hotel/src/main/resources/db",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/db" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.HotelApplication">
+    <configuration name="graduate.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/src/main/resources/db/数据库/建库语句/graduate.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration name="HotelApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="hotel" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.soft.hotel.HotelApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="数据库脚本.graduate.sql" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="6e8dc6de-3f8a-4960-9fe2-fc82640aea08" name="变更" comment="" />
+      <created>1680157499424</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680157499424</updated>
+      <workItem from="1680157501477" duration="5073000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="111" />
+    <option name="LAST_COMMIT_MESSAGE" value="111" />
+  </component>
+</project>

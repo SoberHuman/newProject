@@ -1,0 +1,543 @@
+.no-yj{
+    border-radius:0px !important; 
+}
+  .label-nav{
+position: absolute;
+top: -13px;
+right: -12px;
+text-align: center;
+font-size: 9px;
+padding: 2px 4px;
+line-height: 0.9;
+
+}
+.nav-left {
+
+margin-top: -20px;
+
+position:fixed;
+z-index:2;
+text-align:center;
+
+
+         }
+
+.nav-list > ul {
+    border: 1px solid #E7E7E7;
+    list-style: none;
+    
+    background-color: #F9F9F9;
+    padding: 0px;
+    margin: 0px;
+min-height:900px;
+       
+        
+ }
+
+.nav-list > ul > li {
+    border-top: 1px solid #E7E7E7;
+    display: block;
+}
+
+.nav-list > ul > li:first-child {
+    border-top: 0px;
+}
+
+.nav-list > ul > li:last-child {
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.nav-list > ul > li > a {
+    padding: 10px 30px 10px 0px;
+    display: block;
+    color: #777777 !important;
+    border-left: 3px solid #F9F9F9;
+}
+
+.nav-list > ul > li > a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #1963AA !important;
+}
+
+.nav-list > ul > li > a:hover {
+    color: #1963AA !important;
+    text-decoration: none;
+    background-color: #fff;
+    border-left: 3px solid #1963AA;
+}
+
+.nav-left > .user-panel {
+    padding: 30px;
+    background-color: #F9F9F9;
+    border-right: 1px solid #E7E7E7;
+}
+
+.nav-left-bottrom-border {
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.nav-left-dropdown-ul {
+    background-color: #fff;
+    border-left: 3px solid #1963AA;
+    margin-top: -1px;
+}
+
+.nav-left > .user-panel > img {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-left-dropdown > ul {
+    display: none;
+}
+
+.nav-left-dropdown-menu {
+    position: relative;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.nav-left-dropdown-menu > li {
+    border-top: 1px dotted #E7E7E7;
+}
+
+.nav-left-dropdown-menu > li > a {
+    color: #777777 !important;
+    display: block;
+    padding: 10px 30px 10px 0px;
+    text-align:center;
+}
+
+.nav-left-dropdown-menu > li > a:hover, .nav-left-dropdown-menu > li > a:focus {
+    color: #1963AA !important;
+    text-decoration: none;
+    outline: none;
+}
+
+.nav-left-dropdown-menu > li:first-child {
+}
+
+.nav-left-dropdown-a {
+    background-color: #F9F9F9;
+    border-left: 3px solid #1963AA;
+}
+.nav-user-img{
+    width:20px;height:20px;
+}
+.nav-user-img-xiala{
+    width:100px; height:100px;
+}
+
+.no-hover:hover{
+   background:none;
+   color:none;
+}
+ .nav-username{
+     margin-left:8px
+ }
+.nav a:hover{
+    background-color:#EEE !important; 
+}
+.no-padding{
+    padding:0 !important; 
+}
+
+.main-right{
+    margin-top:-20px;
+    padding:20px 0px;
+}
+.pagination>.active>a,.pagination>.active>a:hover,.pagination>.active>a:focus{
+    outline:none;
+    color:#0a8cd2;
+    border:1px solid #ddd;
+    border-top:1px solid #f00 !important;
+    background-color:#EEE !important;
+}
+.pagination>.active{
+    background-color:none !important;
+}
+table{
+    color:#666666;
+}
+.tb-bg>thead{
+   background-color:#f7f7f7;
+}
+.label{
+    color:#fff !important;
+}
+ .panel-2{
+         border-top:3px solid #244d9f;
+         
+     }
+ .panel-3{
+     border-top:3px solid #1963AA;
+ }
+ .tb-hover>tbody>tr:hover{
+     background-color:#F7F7F7;
+ }
+ .user-li-head{
+     background-color: #F9F9F9; margin-top: 0px; border-bottom: 1px solid #EEEEEE; padding-top: 10px
+ }
+ .navbar-brand{
+     padding-left :30px;
+ }
+@media only screen and (max-width: 769px) {
+
+    .nav-left{
+       display:none;
+        z-index:999;
+    }
+
+}
+/*左侧导航栏*/
+.navbtn{
+	float: right;
+}
+.navbtns{
+	float: right;
+	display: none;
+}
+.navbtn1{
+	float: right;
+}
+.navbtns1{
+	float: right;
+	display: none;
+}
+/*主界面*/
+.bodys{
+	margin-bottom: 0px;
+	margin-top: -39px;
+	padding-bottom: 0;
+}
+/*顶部导航栏*/
+.navs{
+	position: relative;
+	z-index: 9;
+	top:0px;
+	margin:0;
+	padding: 0;
+}
+/*搜索房间*/
+.showRoomInp{
+	width: 300px;
+	margin: 0px 0px 0px 90px;
+}
+/*房型列表*/
+.romTypeList{
+	width:100%;
+	height:36vw;
+	padding-bottom:50px;
+	overflow:auto;
+} 
+.romTypeList_a{
+	position:relative;
+	display:inline-block;
+	width:140px;
+	height:120px;
+	float:left;
+	margin:30px 0px 10px 70px;
+	border:1px solid #ccc;
+	border-radius:7px/7px;
+	text-align:center;
+	text-decoration:none;	
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+	overflow: hidden;
+	color: #fff;
+}
+.roomFunction{
+	width:140px;
+	height:6px;
+	position: absolute;
+	top:-120px;
+	left: 0;
+	padding-top: 92px;
+	background: rgba(0,0,0,0.1);
+	transition: all 0.3s;
+	z-index: 9;
+	text-align: center;
+}
+.roomFunction a{
+	display: inline-block;
+	width: 32px;
+	height: 22px;
+	font-size:14px;
+	line-height:22px;
+	color: #eee;
+	background: #399cb9;
+	margin:0;
+}
+.romTypeList_a:hover .roomFunction{
+	top:0;
+}
+.romTypeList_a b{
+	display:inline-block;
+	width:100%;
+	font-size:22px;
+	height:120px;
+	line-height:120px;
+	font-weight:100;
+	text-align:center;
+	display: inline-block;
+	color: #fff;
+}
+.romTypeList_a .struts_logo{
+	display: block;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	color: #fff;
+	font-size: 20px;
+	font-weight:600;
+	top: 90px;
+	left: 110px;
+	opacity: 0.9;
+}
+}
+.romTypeList_a p:hover{
+	color: #fff;
+}
+.newRoomText{
+	display:inline-block;
+	height:120px;
+	line-height: 120px;
+	font-size: 16px;
+	color: #aaa;
+}
+.newRoomText:hover{
+	color: #ccc;
+}
+/*房间数量显示*/
+.footer{
+	width: 422px;
+	height: 52px;
+	position: fixed;
+	top: 91.5%;
+	left: 17%;
+	background: #F1F5FF;
+	border: 1px solid #ccc;
+	display: flex;
+	justify-content: space-between;
+
+}
+.footer>a{
+	color:#000;
+	font-size: 14px;
+}
+.footer p{
+	display: inline-block;
+	float:left;
+	width: 60px;
+	height: 50px;
+	padding-top: 8px;
+	text-align: center;
+	font-size: 14px;
+	color: #000;
+}
+.footer span{
+	display: inline-block;
+}
+
+.span2{
+	background: #9eC9DE;
+}
+.span3{
+	background: #399AB9;
+}
+.span4{
+	background: #aaddBF;
+}
+.span5{
+	background: #EC994F;
+}
+.span6{
+	background: #D9734F;
+}
+/*新增房间类型*/
+.newRoomType{
+	width: 80%;
+	position: absolute;
+	top:5%;
+	left:8%;
+	z-index: 99;
+	display: none;
+}
+.newRoomTypeInp{
+	width: 37%;
+	float: left;
+	margin: 7.5px 50px;
+}
+.newRoomTypeFooter{
+	clear:both;
+	width: 100%;
+	text-align: center;
+}
+.newRoomTypeFooter .btns{
+	display: inline-block;
+	margin: 0 5px;
+}
+/*房间详情*/
+.roomDetail{
+	width: 80%;
+	position: absolute;
+	top:5%;
+	left:8%;
+	z-index: 9;
+	display: none;
+}
+/*修改房间信息*/
+.updateRoom{
+	width: 80%;
+	position: absolute;
+	top:5%;
+	left:8%;
+	z-index: 99;
+	display: none;
+}
+
+/*删除客房*/
+.deleteRoom{
+	width:300px;	
+	position: fixed;
+	top: 30%;
+	left: 40%;
+	display: none;
+	text-align: center;
+	z-index: 99;
+}
+.deleteRoomBody{
+	height: 200px;
+}
+.deleteRoomBody .tips{
+	margin-top: 30px;
+	font-size: 16px;
+}
+.deleteRoomFooter{
+	width: 100%;
+	margin-top:45px;
+	text-align: center;
+}
+.deleteRoomFooter .btns{
+	display: inline-block;
+	margin: 0 5px;
+}
+/*后勤管理*/
+.logistics{
+  	position: fixed;
+  	width:30%;
+  	top:20%;
+  	left: 40%;
+  	display:none;
+  	z-index: 99;
+}
+.btnMain{
+	width: 100%;
+	height:35px;
+}
+.btnMain >.btns{
+display:inline-block;
+width:50%;
+float: left;
+margin: 0 -0.5px;   	
+} 
+.logisticsInp{
+	width: 250px;
+	margin: 30px auto;
+}
+.from2{
+  	display: none;
+}
+.maintainStatus2{
+	display: none;
+}
+/*预订登记*/
+.reservation{
+	width: 80%;
+	position: absolute;
+	top:5%;
+	left:8%;
+	z-index: 9;
+	display: none;
+}
+/*预订详情*/
+.reservationDetail{
+	width: 80%;
+	position: absolute;
+	top:5%;
+	left:8%;
+	z-index: 9;
+	display: none;
+}
+/*退订登记*/
+.unsubscribe{
+	width: 80%;
+	position: absolute;
+	top:5%;
+	left:8%;
+	z-index: 9;
+	display: none;
+}
+/*修改退订押金比例*/
+.defaultRatio{
+	width: 30%;
+	position: absolute;
+	top:20%;
+	left:30%;
+	z-index: 99;
+	text-align: center;
+	display: none;
+}
+/*入住登记*/
+.checkIn{
+	width: 80%;
+	position: absolute;
+	top:5%;
+	left:8%;
+	z-index: 99;
+	display: none;
+}
+.checkInBtn{
+	width: 100%;
+	height:35px;
+	display: none;
+}
+.direct,.temporary{
+display:inline-block;
+width:50%;
+float: left;
+margin: 0 -0.5px;   	
+} 
+.checkInInp{
+	width: 37%;
+	float: left;
+	margin: 4.5px 50px;
+}
+/*入住详情*/
+.showCheckIn{
+	width: 80%;
+	position: absolute;
+	top:5%;
+	left:8%;
+	z-index: 9;
+	display: none;
+}
+/*续住登记*/
+.continued{
+	width: 80%;
+	position: absolute;
+	top:5%;
+	left:8%;
+	z-index: 9;
+	display: none;
+}
+/*退房登记*/
+.checkOut{
+	width: 80%;
+	position: absolute;
+	top:4%;
+	left:8%;
+	z-index: 9;
+	display: none;
+}

@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: fd5faa12df4a235b2e093838a03dd2f73;
+}
+.main{
+	color: #fff;
+}
+.top{
+	width: 100%;
+	height: 120px;
+	letter-spacing: 2px;
+	
+}
+.top-logo{
+	width: 150px;
+	height: 100px;
+	margin: 1% 15.2% 0 4%;
+	float: left;
+}
+.top>h1{
+	font-family: "宋体";
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+	line-height: 200px;
+	display: inline-block;
+	width: 40%;
+	height: 120px;
+	margin: 0 auto;
+}
+.top p{
+	color: #FFFFFF;
+	font-size: 14px;
+	margin: 8px 8px 0 0;
+	float: right;
+	display: inline-block;
+	opacity: 0.9;
+}
+.top a{
+	color: #fff;
+	opacity: 0.9;
+	text-decoration: underline;
+}
+.top a:hover{
+	opacity: 1;
+}
+.section{
+	width: 100%;
+	clear: both;
+	padding-top: 180px;
+}
+.logo{
+	clear: both;
+	width: 70%;
+	margin: 0 auto;
+}
+.logo a{
+	color: #fff;
+}
+.logo1,.logo2,.logo3,.logo4,.logo5{
+	width: 13%;
+	height: 12vw;
+	margin-left: 60px;
+	float: left;
+	text-align: center;
+	letter-spacing: 0.8px;
+	transition: all 0.5s; 
+}
+.logo1{
+	margin-left: 50px;
+}
+.logo1 img,.logo2 img,.logo3 img,.logo4 img,.logo5 img{
+	width: 70%;
+	margin: 0 0 15px 4%;
+}
+.logo1 img{
+	width: 74%;
+}
+.logo3 img{
+	width: 71%;
+}
+.logo4 img{
+	width: 63%;
+}
+.logo5 img{
+	width: 54%;
+}
+.logo1:hover,.logo2:hover,.logo3:hover,.logo4:hover,.logo5:hover{
+	width: 15%;
+	height: 15vw;
+	margin-left: 50px;
+}
+
