@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			
+			
+			.box1{
+				width: 100%;
+				height: 120px;
+				display: flex;
+				justify-content: space-between;
+			}
+			.box1 p{
+				font-size: 20px;
+				padding-top: 50px;
+			}
+			
+			
+			
+			
+			.box2{
+				width: 100%;
+				height: 160px;
+				border-top: 5px solid black;
+				border-bottom: 5px solid black;
+			}
+			
+			.mybox{
+				width: 50%;
+				height: 100px;
+				/*background-color: orange;*/
+				margin: auto;
+				display: flex;
+				justify-content: space-between;
+			}
+			.mybox p{
+				padding-top: 10px;
+			}
+			.mybox p:first-child{
+				font-size: 25px;
+				color: red;
+				margin-right: 15%;
+			}
+			.mybox p:last-child{
+				font-size: 25px;
+				color: green;
+				margin-left: 15%;
+			}
+			.mybox img{
+				width: 80px;
+				height: 80px;
+			}
+			.mybox .img1 img{
+				transform: rotateY(180deg);
+			}
+			.mybox span{
+				height: 60px;
+				margin: 20px;
+				border: 1px solid black;
+				background-color: black;
+			}
+			
+			
+			
+			.box3{
+				width: 100%;
+				height: 150px;
+				border-bottom: 5px solid black;
+			}
+			ul{
+				width: 45%;
+				height: 100px;
+				margin: 50px auto;
+				list-style: none;
+				
+				/*display: flex;
+				justify-content: space-between;*/
+				
+			}
+			li{
+				width: 85px;
+				height: 85px;
+				border: 5px solid black;
+				padding: 10px;
+				background-color: orange;
+				border-radius: 10px;
+				overflow: hidden;
+				display: inline-block;
+				transition: all 0.3s;
+			}
+			.oli{
+				transform: scale(1.1,1.1);
+			}
+			
+			
+			
+			.box3 img{
+				width: 80px;
+				height: 80px;
+			}
+			.box3 img:active{
+				width: 85px;
+				height: 85px;
+				-webkit-filter:drop-shadow(-5px -5px 5px red);
+			}
+			
+			
+			
+			.active{
+				animation: act 0.3s linear forwards;
+			}
+			@keyframes act{
+				from{transform:rotateY(180deg) rotateZ(90deg)}
+				to{transform:rotateY(180deg) rotateZ(0deg)}
+			}
+			
+			.active2{
+				animation: act2 0.3s linear forwards;
+			}
+			@keyframes act2{
+				from{transform: rotateZ(90deg)}
+				to{transform: rotateZ(0deg)}
+			}
+			.mask_layer{
+				width: 100%;
+				height: 100vh;
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color:  rgba(0,0,0,0);
+				z-index: 10;
+				display: none;
+			}
+			.mask_layer2{
+				width: 100%;
+				height: 100vh;
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color:  rgba(0,70,0,0);
+				z-index: 10;
+				display: none;
+			}
+			
+			.back1{
+				/*background-color: green;*/
+				transition: all 1s; 
+				animation: b1 1s  linear forwards;
+			}
+			.back2{
+				/*background-color: red;*/
+				animation: b2 1s  linear forwards;
+			}
+			.back3{
+				/*background-color: gray;*/
+				animation: b3 1s  linear forwards;
+			}
+			.ba1{
+				background-color: green;
+			}
+			.ba2{
+				background-color: red;
+			}
+			.ba3{
+				background-color: gray;
+			}
+			
+			@keyframes b1{
+				from{background-color: green;}
+				to{background-color: white;}
+			}
+			@keyframes b2{
+				from{background-color: red;}
+				to{background-color: white;}
+			}
+			@keyframes b3{
+				from{background-color: gray;}
+				to{background-color: white;}
+			}
+			
+			.btn{ 
+				position: fixed;
+				left: 47%;
+				padding: 5px 10px;
+				background-color: orange;
+				border-radius: 10px;
+				z-index: 100;
+			}
+			
+			.tp{
+				font-size: 40px;
+				text-align: center;
+				margin: 40px 0 0 0;
+			}
+			
+		</style>
+		<script src="js/jquery-3.6.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function(){
+				var k = 0;
+				var j = 0;
+				score1 = 1;
+				score2 = 1;
+				
+				$("li").click(function(){
+					
+//					
+					$(this).addClass("oli");
+					setTimeout(function(){
+						$("li").removeClass("oli");
+					},200)
+					
+					
+					$(".mask_layer").show();
+					var img = $(this).find("img").clone();
+					$(".img1 img").remove();
+					img.addClass("active");
+					img.appendTo($(".mybox div").eq(0));
+					
+					
+					var i = parseInt(Math.random()*5);
+					var img2 = $("li").eq(i).find("img").clone();
+					$(".img2 img").remove();
+					img2.addClass("active2");
+					img2.appendTo($(".mybox div").eq(1));
+					
+					k++;
+					var sT = setTimeout(fn,300);
+					function fn(){
+						$(".box2 span").eq(0).html(k + "/10");
+					}
+					if(k > 10){
+						clearInterval(sT);
+//						$(this).unbind();
+					}
+					//1s关闭一回遮罩层
+					setTimeout(fn1,1000);
+					
+			
+					
+					
+//					石头：杀剪刀、蜥蜴
+//					布：杀石头、虫子
+//					剪刀：杀布、蜥蜴
+//					蜥蜴：杀虫子、布
+//					虫子：杀石头、剪刀
+					
+					
+					
+					//判断我的得分
+					
+					function myli(){
+						$(".box1 p").eq(0).html("得分:" + score1);
+						score1++;
+						$(".box2").addClass("back1");
+						$(".box2").removeClass("back2");
+						$(".box2").removeClass("back3");
+						
+					}
+					function myli2(){
+						$(".box2").addClass("back3");
+						$(".box2").removeClass("back1");
+						$(".box2").removeClass("back2");
+					}
+					function myli3(){
+						$(".box1 p").eq(1).html("得分:" + score2);
+						score2++;
+						$(".box2").addClass("back2");
+						$(".box2").removeClass("back1");
+						$(".box2").removeClass("back3");
+					}
+					
+					
+					
+					
+					
+					
+					//
+					setTimeout(function(){
+						$(".box2").removeClass("back3");
+						$(".box2").removeClass("back1");
+						$(".box2").removeClass("back2");
+					},1000)
+					
+					if($("li").index(this) == 0){
+						if(i == 2 || i == 3){
+							myli();
+						}else if(i == 0){
+							myli2();
+						}else{
+							myli3();
+						}
+						
+					}
+					
+					if($("li").index(this) == 1){
+						if(i == 0 || i == 4){
+							myli();
+						}else if(i == 1){
+							myli2();
+						}else{
+							myli3();
+						}
+					}
+					
+					if($("li").index(this) == 2){
+						if(i == 1 || i == 3){
+							myli();
+						}else if(i == 2){
+							myli2();
+						}else{
+							myli3();
+						}
+					}
+					
+					if($("li").index(this) == 3){
+						if(i == 4 || i == 1){
+							myli();
+						}else if(i == 3){
+							myli2();
+						}else{
+							myli3();
+						}
+					}
+					
+					if($("li").index(this) == 4){
+						if(i == 0 || i == 2){
+							myli();
+						}else if(i == 4){
+							myli2();
+						}else{
+							myli3();
+						}
+					}
+					
+					
+					
+				})
+
+
+
+
+
+
+				setTimeout(fn1,5000);
+				
+				function fn1(){
+					$(".mask_layer").hide();
+					
+					function end(){
+						p.addClass("tp");
+						p.appendTo($(".box2"));
+						
+						var btn = $("<button>重新玩</button>");
+						btn.addClass("btn");
+						btn.appendTo($(".box2"));
+					
+						btn.attr("onclick","location.reload()");
+						$(".box2").removeClass("back3");
+						$(".box2").removeClass("back1");
+						$(".box2").removeClass("back2");
+					}
+					
+					if(k > 9){
+						$(".mask_layer2").show();
+						$(".mybox").hide();
+						$(".box2 span").hide();
+						if(score1 > score2){
+							$(".box2").addClass("ba1");
+							$(".box2").removeClass("ba2");
+							$(".box2").removeClass("ba3");
+							var p = $("<p>You Win!</p>");
+							end();
+							
+							
+						}else if(score1 == score2){
+							$(".box2").addClass("ba3");
+							$(".box2").removeClass("ba1");
+							$(".box2").removeClass("ba2");
+							var p = $("<p>A Draw</p>");
+							end();
+							
+							
+						}else{
+							$(".box2").addClass("ba2");
+							$(".box2").removeClass("ba1");
+							$(".box2").removeClass("ba3");
+							var p = $("<p>You Lost!</p>");
+							end();
+						}
+					}
+				}
+
+		
+			})
+		</script>
+	</head>
+	<body>
+		<div class="mask_layer"></div>
+		<div class="mask_layer2"></div>
+		<div class="box1"><p>得分：0</p><p>得分：0</p></div>
+		<div class="box2">
+			<span>0/10</span>
+			<div class="mybox">
+				<p>我</p>
+				<div class="img1">
+					<img src="img/102.png"/>
+				</div>
+				
+				<span></span>
+				<div class="img2">
+					<img src="img/102.png"/>
+				</div>
+				
+				<p>电脑</p>
+			</div>
+		</div>
+		<div class="box3">
+			<ul>
+				<li><img src="img/102.png"/></li>
+				<li><img src="img/101.png"/></li>
+				<li><img src="img/104.png"/></li>
+				<li><img src="img/100.png"/></li>
+				<li><img src="img/103.png"/></li>
+			</ul>
+		</div>
+	</body>
+</html>
