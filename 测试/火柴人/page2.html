@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.p1{
+				text-align: center;
+				color: #ccc;
+				margin-top: 20px;
+				opacity: 1;
+				animation:myp1 1s linear 3s forwards;
+				position: relative;
+				z-index: 99;
+			}
+			.p2{
+				position: fixed;
+				top: 71vh;
+				width: 100%;
+			}
+			@keyframes myp1{
+				from{opacity: 1;}
+				to{opacity: 0;}
+			}
+			.obox1{
+				width: 100%;
+				height: 70vh;
+				position: fixed;
+				top: 0px;
+				left: 0px;
+			}
+			.obox2{
+				width: 100%;
+				height: 25vh;
+				position: fixed;
+				top: 70vh;
+				left: 0px;
+			}
+			.myline{
+				width: 100%;
+				height: 8px;
+				background: black;
+				position: absolute;
+				bottom: 0px;
+				background:url(img/ground.png) 0px 0px/45px 8px;
+			}
+			.obj{
+				width: 21px;
+				height: 36px;
+				background: url(img/10007_01.png);
+				animation: myobj 0.3s steps(1,start) infinite;
+			}
+			@keyframes myobj{
+				0%{background: url(img/10007_01.png) center 0px;}
+				25%{background url(img/10007_02.png);}
+				50%{background: url(img/10007_03.png);}
+				75%{background: url(img/10007_04.png);}
+				100%{background: url(img/10007_01.png) center 0px;}
+			}
+			.box{
+				width: 21px;
+				height: 36px;
+				position: absolute;
+				bottom: 8px;
+				left: 100px;
+				/*animation: mybox 1s linear;*/
+			}
+			@keyframes mybox{
+				0%{bottom: 8px;}
+				50%{bottom: 158px;}
+				100%{bottom: 8px;}
+			}
+			.active{
+				position: absolute;
+				bottom: 8px;
+				left: 0px;
+				width: 20px;
+				height: 60px;
+				background: url(img/barrier.png) center top/100%;
+			}
+			.blast{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 110px;
+				height: 100px;
+				background: url(img/10008.png) 0px 0px;
+				animation: myblast 0.5s steps(1,end) forwards;
+			}
+			@keyframes myblast{
+				0%{background: url(img/10008.png) 0px 0px;}
+				33%{background: url(img/10008.png) -110px 0px;}
+				66%{background: url(img/10008.png) -233px 0px;}
+				100%{background: url(img/10008.png) -368px 0px;}
+			}
+			.oh3{
+				position: fixed;
+				top: 30px;
+				left: 30px;
+				font-size: 40px;
+			}
+			.over{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				background: red;
+				width: 100%;
+				height: 100vh;
+				z-index: 99;
+				display: none;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.over h2{
+				font-size: 50px;
+				color: white;
+				margin-bottom: 10px;
+			}
+			.line{
+				max-width: 465px;				
+				width: 90%;
+				height: 8px;
+				background: white;
+			}
+			.over h3{
+				font-size: 60px;
+				margin: 100px 0px;
+			}
+			.over div:last-child{
+				margin-top: 10px;
+			}
+			.over a{
+				color: white;
+				text-decoration: none;
+				font-size: 40px;
+				margin-right: 20px;
+				
+			}
+			.over span{
+				color: rgb(255,255,46);
+				font-size: 40px;
+				
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var obox = document.querySelector(".obox");
+				var obox1 = document.querySelector(".obox1");
+				var obox2 = document.querySelector(".obox2");
+				var over = document.querySelector(".over");
+				var running = 0;//0停止动画，1正在跳跃
+				var running2 = 0;
+				var sett1;
+				var sett2;
+				var speed = 28;
+				var newtime = 0;
+				obox1.onclick = function (){
+					if(running==0){
+						run();
+					}					
+				}
+				obox2.onclick = function (){
+					if(running2==0){
+						run2();
+					}					
+				}
+				//跳跃动画
+				function run(){
+					running=1;
+					obox1.querySelector(".box").style.animation="mybox 1s linear";
+					sett1 = setTimeout(function(){
+						obox1.querySelector(".box").style.animation="none";
+						running=0;
+					},1000)
+				}
+				function run2(){
+					running2=1;
+					obox2.querySelector(".box").style.animation="mybox 1s linear";
+					sett2 = setTimeout(function(){
+						obox2.querySelector(".box").style.animation="none";
+						running2=0;
+					},1000)
+				}
+				//按空格向上跳跃
+				window.onkeydown = function(e){
+					var e = e||event;
+					if(e.keyCode==32){
+						if(running==0){
+							run();
+						}
+					}
+					if(e.keyCode==38){
+						if(running2==0){
+							run2();
+						}
+					}
+				}
+				//随机五个方块
+				for(var i=0;i<5;i++){
+					var div = document.createElement("div");
+					div.className="active";
+					
+					if(window.innerWidth<640){
+						div.style.left = 80*i+Math.floor(Math.random()*7)-3+100+"%";
+					}else{
+						div.style.left = 25*i+Math.floor(Math.random()*7)-3+100+"%";
+					}
+					div.style.width = Math.floor(Math.random()*21)+20+"px";//[20,40]
+					div.style.height = Math.floor(Math.random()*41)+60+"px";//[60,100]
+					obox1.querySelector(".obox").appendChild(div);
+				}
+				for(var i=0;i<5;i++){
+					var div = document.createElement("div");
+					div.className="active";
+					
+					if(window.innerWidth<640){
+						div.style.left = 80*i+Math.floor(Math.random()*7)-3+100+"%";
+					}else{
+						div.style.left = 25*i+Math.floor(Math.random()*7)-3+100+"%";
+					}
+					div.style.width = Math.floor(Math.random()*21)+20+"px";//[20,40]
+					div.style.height = Math.floor(Math.random()*41)+60+"px";//[60,100]
+					obox2.querySelector(".obox").appendChild(div);
+				}
+				//控制方块移动
+				var t1 = setInterval(function(){
+					newtime+=speed;
+					document.querySelector(".oh3").innerHTML = newtime/1000+"s";
+					var odiv = obox1.querySelector(".obox").querySelectorAll("div");
+					//第一个方块碰到火柴人
+					if(obox1.querySelector(".box").offsetLeft+obox1.querySelector(".box").offsetWidth<odiv[0].offsetLeft ||obox1.querySelector(".box").offsetLeft+obox1.querySelector(".box").offsetWidth>odiv[0].offsetLeft+odiv[0].offsetWidth || obox1.querySelector(".box").offsetTop+obox1.querySelector(".box").offsetHeight<odiv[0].offsetTop){
+						
+					}else{
+						obox1.onclick=null;
+						obox2.onclick=null;
+						window.onkeydown=null;
+						console.log(1)
+						clearInterval(t1);
+						clearInterval(t2);
+						obox1.querySelector(".box").style.animationPlayState="paused";
+						obox2.querySelector(".box").style.animationPlayState="paused";
+						clearTimeout(sett1);
+						clearTimeout(sett2);
+						//爆炸效果
+						var blast = document.createElement("div");
+						blast.className = "blast";
+						blast.style.left = obox1.querySelector(".box").offsetLeft-79/2+"px";
+						blast.style.top = obox1.querySelector(".box").offsetTop-32+"px";
+						obox1.appendChild(blast)
+						setTimeout(function(){
+							obox1.removeChild(blast);
+							//游戏结束
+							over.style.display="flex";
+							over.querySelector("h3").innerHTML = newtime/1000+"s";
+						},500)
+					}
+					for(var i=0;i<odiv.length;i++){
+						var x = odiv[i].offsetLeft;
+						odiv[i].style.left = x-5-(parseInt(newtime/5000)+1)+"px";
+					}
+					//第一个方块跑出屏幕
+					if(odiv[0].offsetLeft+odiv[0].offsetWidth<=0){
+						var div = document.createElement("div");
+						div.className="active";
+						var lastdivx = odiv[4].offsetLeft;
+						if(window.innerWidth<640){
+							var w = window.innerWidth*(Math.floor(Math.random()*21)+60)/100;
+							div.style.left =lastdivx+w+"px";
+						}else{
+							var w = window.innerWidth*(Math.floor(Math.random()*21)-10+25)/100;
+							div.style.left =lastdivx+w+"px";
+						}
+						
+						div.style.width = Math.floor(Math.random()*21)+10+"px";//[10,30]
+						div.style.height = Math.floor(Math.random()*41)+40+"px";//[40,80]
+						obox1.querySelector(".obox").appendChild(div);
+						obox1.querySelector(".obox").removeChild(odiv[0]);
+					}					
+				},speed)
+				
+				
+				var t2 = setInterval(function(){
+					newtime+=speed;
+					document.querySelector(".oh3").innerHTML = newtime/1000+"s";
+					var odiv = obox2.querySelector(".obox").querySelectorAll("div");
+					//第一个方块碰到火柴人
+					if(obox2.querySelector(".box").offsetLeft+obox2.querySelector(".box").offsetWidth<odiv[0].offsetLeft ||obox2.querySelector(".box").offsetLeft+obox2.querySelector(".box").offsetWidth>odiv[0].offsetLeft+odiv[0].offsetWidth || obox2.querySelector(".box").offsetTop+obox2.querySelector(".box").offsetHeight<odiv[0].offsetTop){
+						
+					}else{
+						obox1.onclick=null;
+						obox2.onclick=null;
+						window.onkeydown=null;
+						clearInterval(t2);
+						clearInterval(t1);
+						obox1.querySelector(".box").style.animationPlayState="paused";
+						obox2.querySelector(".box").style.animationPlayState="paused";
+						clearTimeout(sett1);
+						clearTimeout(sett2);
+						//爆炸效果
+						var blast = document.createElement("div");
+						blast.className = "blast";
+						blast.style.left = obox2.querySelector(".box").offsetLeft-79/2+"px";
+						blast.style.top = obox2.querySelector(".box").offsetTop-32+"px";
+						obox2.appendChild(blast)
+						setTimeout(function(){
+							obox2.removeChild(blast);
+							//游戏结束
+							over.style.display="flex";
+							over.querySelector("h3").innerHTML = newtime/1000+"s";
+						},500)
+					}
+					for(var i=0;i<odiv.length;i++){
+						var x = odiv[i].offsetLeft;
+						odiv[i].style.left = x-5-(parseInt(newtime/5000)+1)+"px";
+					}
+					//第一个方块跑出屏幕
+					if(odiv[0].offsetLeft+odiv[0].offsetWidth<=0){
+						var div = document.createElement("div");
+						div.className="active";
+						var lastdivx = odiv[4].offsetLeft;
+						if(window.innerWidth<640){
+							var w = window.innerWidth*(Math.floor(Math.random()*21)+60)/100;
+							div.style.left =lastdivx+w+"px";
+						}else{
+							var w = window.innerWidth*(Math.floor(Math.random()*21)-10+25)/100;
+							div.style.left =lastdivx+w+"px";
+						}
+						
+						div.style.width = Math.floor(Math.random()*21)+10+"px";//[10,30]
+						div.style.height = Math.floor(Math.random()*41)+40+"px";//[40,80]
+						obox2.querySelector(".obox").appendChild(div);
+						obox2.querySelector(".obox").removeChild(odiv[0]);
+					}					
+				},speed)
+				//心态爆炸
+				over.querySelector("span").onclick = function(){
+					closePage()
+				}
+				function closePage(){
+					if (navigator.userAgent.indexOf("Firefox") != -1|| navigator.userAgent.indexOf("Chrome" )){
+						window.location.href ="about:blank";
+						window.close();
+					}else{
+						window.opener =null ;
+						window.open("","self");
+						window.close();
+					}
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<p class="p1">点击当前空白区域或者按空格键控制火柴人跳跃</p>
+		<p class="p1 p2">点击当前空白区域或者按上方向键控制火柴人跳跃</p>
+		<div class="obox1">
+			<div class="myline"></div>
+			<div class="box">
+				<div class="obj"></div>
+			</div>
+			<div class="obox">
+				
+			</div>
+		</div>
+		<div class="obox2">
+			<div class="myline"></div>
+			<div class="box">
+				<div class="obj"></div>
+			</div>
+			<div class="obox">
+				
+			</div>
+		</div>
+		<h3 class="oh3">0.000s</h3>
+		<div class="over">
+			<h2>我的成绩</h2>
+			<div class="line"></div>
+			<h3>100s</h3>
+			<div class="line line2"></div>
+			<div>
+				<a href="index.html">返回</a>
+				<span>心态爆炸</span>
+			</div>
+		</div>
+	</body>
+</html>
