@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				height: 100vh;
+				overflow: hidden;
+				background: url(img/bj.png) no-repeat 0px 0px/cover;
+			}
+			.obox{
+				display: flex;
+				height: 100%;
+				justify-content: space-around;
+				align-items: center;
+			}
+			.box_l{
+				width: 440px;
+				height: 70vh;
+				padding: 50px 0px 40px;
+				background: #ff6231;
+				border-radius: 10px;
+				border: solid 1px black;
+				position: relative;
+				border-image: url(img/border.png) 48/36px stretch;
+			}
+			
+			.hd{
+				position: absolute;
+				top: -32px;
+				left: 50%;
+				margin-left: -160px;
+				width: 320px;
+				height: 64px;
+				color: white;
+				font-weight: 900;
+				text-align: center;
+				line-height: 64px;
+				font-size: 30px;
+				background: url(img/1.png) 0px 0px/100% 100%;
+			}
+			.row{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			.prize_box{
+				width: 120%;
+				height: 100%;
+				overflow: auto;
+			}
+			.prize_info{
+				display: flex;
+				align-items: center;
+				background: white;
+				border-radius: 10px;
+				color: #666;
+				width: 380px;
+				margin-left: 30px;
+				margin-bottom: 15px;
+			}
+			.prize_box .prize_info:last-child{
+				margin-bottom: 0;
+			}
+			.prize_info img{
+				width: 75px;
+				padding: 15px;
+			}
+			.prize_info h3{
+				color: red;
+				margin-bottom: 5px;
+			}
+			.box_r{
+				width: 600px;
+				height: 598px;
+				background: url(img/bg1.png) ;
+				animation: bg_rotate 1s step-start infinite;
+				position: relative;
+			}
+			@keyframes bg_rotate{
+				0%{background: url(img/bg1.png) ;}
+				50%{background: url(img/bg2.png) ;}
+				100%{background: url(img/bg1.png) ;}
+			}
+			canvas{
+				display: block;
+			}
+			.btn_box{
+				width: 150px;
+				height: 150px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: -93px 0px 0px -75px;
+			}
+			.btn_box img{
+				width: 100%;
+			}
+			.btn{
+				width: 110px;
+				height: 110px;
+				border-radius: 100%;
+				position: absolute;
+				bottom: 0px;
+				left: 50%;
+				margin-left: -55px;
+				cursor: pointer;
+			}
+			.pop_up{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100vh;
+				background: rgba(0,0,0,0.6);
+				display: none;
+			}
+			.packet-light{
+				width: 1300px;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				margin: -650px 0px 0px -650px;
+				animation: packet_light 30s linear infinite;
+			}
+			@keyframes packet_light{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+			}
+			.pop_info{
+				width: 250px;
+				height: 300px;
+				background: url(img/pop_info.png) 0px 0px/100% 100%;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin: -150px 0px 0px -125px;
+				text-align: center;
+				color: white;
+			}
+			.pop_info img{
+				width: 100px;
+				margin-top: 100px;
+			}
+			.close_btn{
+				width: 20px;
+				height: 20px;
+				text-align: center;
+				display: block;
+				line-height: 20px;
+				border: solid 1px #ccc;
+				border-radius: 100%;
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="obox">
+			<div class="box_l">
+				<div class="hd">奖品列表</div>
+				<div class="row">
+					<div class="prize_box">
+						<div class="prize_info">
+							<img src="img/prize_0.png" />
+							<div>
+								<h3>特等奖</h3>
+								<p>华为Mate 50E Pro</p>
+							</div>
+						</div>
+						<div class="prize_info">
+							<img src="img/prize_1.png" />
+							<div>
+								<h3>一等奖</h3>
+								<p>创维电视A23 65英寸 4K高清</p>
+							</div>
+						</div>
+						<div class="prize_info">
+							<img src="img/prize_2.png" />
+							<div>
+								<h3>二等奖</h3>
+								<p>米家扫拖机器人 2Pro</p>
+							</div>
+						</div>
+						<div class="prize_info">
+							<img src="img/prize_3.png" />
+							<div>
+								<h3>三等奖</h3>
+								<p>华为手表GT 2 Sports</p>
+							</div>
+						</div>
+						<div class="prize_info">
+							<img src="img/prize_4.png" />
+							<div>
+								<h3>四等奖</h3>
+								<p>负离子吹风机</p>
+							</div>
+						</div>
+						<div class="prize_info">
+							<img src="img/prize_5.png" />
+							<div>
+								<h3>五等奖</h3>
+								<p>华为FreeBuds 4i 无线耳机</p>
+							</div>
+						</div>
+						<div class="prize_info">
+							<img src="img/prize_6.png" />
+							<div>
+								<h3>六等奖</h3>
+								<p>米家智选 iateey即热饮水机</p>
+							</div>
+						</div>
+						<div class="prize_info">
+							<img src="img/prize_7.png" />
+							<div>
+								<h3>精美礼品</h3>
+								<p>精美小礼品一份</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box_r">
+				<canvas></canvas>
+				<div class="btn_box">
+					<img class="start_img" src="img/start.png" />
+					<div class="btn"></div>
+				</div>
+			</div>
+		</div>
+		<div class="pop_up">
+			<img class="packet-light" src="img/packet-light.png" />
+			<div class="pop_info">
+				<img src="img/prize_0.png" />
+				<h3>特等奖</h3>
+				<p>华为Mate 50E Pro</p>	
+				<span class="close_btn">×</span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var canvas = document.querySelector("canvas");
+		var btn = document.querySelector(".btn");
+		var start_img = document.querySelector(".start_img");
+		var pop_up = document.querySelector(".pop_up");
+		var pop_info = document.querySelector(".pop_info");
+		var pop_info_img = pop_info.querySelector("img");
+		var pop_info_h3 = pop_info.querySelector("h3");
+		var pop_info_p = pop_info.querySelector("p");
+		var close_btn = pop_info.querySelector(".close_btn");
+		var running = 0;
+		var rotate_deg = 0;
+		var speed = 1;
+		var prize_run;
+		var n1 = 0;//奖品下标
+		var prize_deg = 0;
+		var bs =0;
+		canvas.width = 600;
+		canvas.height=598;
+		var ctx = canvas.getContext("2d");
+		var arr = [
+			{
+				src:"img/prize_0.png",
+				title:"特等奖",
+				txt:"华为Mate 50E Pro"
+			},
+			{
+				src:"img/prize_1.png",
+				title:"一等奖",
+				txt:"创维电视A23 65英寸 4K高清"
+			},
+			{
+				src:"img/prize_2.png",
+				title:"二等奖",
+				txt:"米家扫拖机器人 2Pro"
+			},
+			{
+				src:"img/prize_3.png",
+				title:"三等奖",
+				txt:"华为手表GT 2 Sports"
+			},
+			{
+				src:"img/prize_4.png",
+				title:"四等奖",
+				txt:"负离子吹风机"
+			},
+			{
+				src:"img/prize_5.png",
+				title:"五等奖",
+				txt:"华为FreeBuds 4i 无线耳机"
+			},
+			{
+				src:"img/prize_6.png",
+				title:"六等奖",
+				txt:"米家智选 iateey即热饮水机"
+			},
+			{
+				src:"img/prize_7.png",
+				title:"精美礼品",
+				txt:"精美小礼品一份"
+			}
+		];
+		ctx.translate(300,299);
+		ctx.save();
+		//绘制扇形
+		ctx.rotate(-112.5*Math.PI/180);
+		for(var i=0;i<8;i++){
+			ctx.beginPath();
+			if(i%2==0){
+				ctx.fillStyle = "rgb(255,184,28)";
+			}else{
+				ctx.fillStyle = "rgb(255,216,49)";
+			}			
+			ctx.moveTo(0,0);
+			ctx.arc(0,0,228,0,45*Math.PI/180,false);			
+			ctx.fill();
+			ctx.rotate(45*Math.PI/180);
+		}
+		ctx.restore();
+		//绘制文字
+		ctx.font="22px 微软雅黑";
+		ctx.textAlign="center";
+		ctx.fillStyle="red";				
+		for(var i=0;i<8;i++){
+			ctx.fillText(arr[i].title,0,-180);
+			ctx.rotate(45*Math.PI/180);
+		}
+		//绘制图片
+		var img = new Image();
+		var n = 0;
+		fn();
+		function fn(){
+			img.src = arr[n].src;
+			img.onload = function(){
+				n++;
+				ctx.drawImage(img,-30,-160,60,60);
+				if(n<=7){
+					fn();
+				}	
+				ctx.rotate(45*Math.PI/180);
+			}
+		}
+		
+		//开始抽奖
+		btn.onclick = myclick;
+		function myclick(){
+			btn.onclick = null;
+			if(running==0){
+				//抽奖
+				running=1;
+				start_img.src = "img/pause.png";
+				run();
+			}else{
+				//结束抽奖
+				running=0;
+				start_img.src = "img/start.png";
+				cancelAnimationFrame(prize_run);
+				n1 = Math.floor(Math.random()*arr.length);
+				prize_deg =360+360-45*n1;
+				bs = prize_deg-rotate_deg;
+				console.log(arr[n1].title);
+				pause();
+			}
+			setTimeout(function(){
+				btn.onclick = myclick;
+			},3000)
+		}
+		//运动
+		function run(){
+			speed=speed*1.1;
+			rotate_deg = Math.floor(rotate_deg+speed);
+			if(speed>=10){
+				speed=10
+			}
+			if(rotate_deg>=360){
+				rotate_deg = rotate_deg-360;
+			}
+			canvas.style.transform = "rotate("+rotate_deg+"deg)";
+			prize_run = requestAnimationFrame(run);
+		}
+		//停止
+		function pause(){
+			if(bs>405){
+				speed=10;
+			}else if(bs>360){
+				speed=9;
+			}else if(bs>315){
+				speed=8;
+			}else if(bs>270){
+				speed=7;
+			}else if(bs>225){
+				speed=6;
+			}else if(bs>180){
+				speed=5;
+			}else if(bs>135){
+				speed=4;
+			}else if(bs>90){
+				speed=3;
+			}else if(bs>45){
+				speed=2;
+			}else{
+				speed=1;
+			}
+			
+			
+			rotate_deg = Math.floor(rotate_deg+speed);
+			bs-=Math.floor(speed);			
+			if(rotate_deg>=360){
+				rotate_deg = rotate_deg-360;
+			}
+			if(bs==0){
+				//弹窗出现
+				pop_up.style.display = "flex";
+				pop_info_img.src = arr[n1].src;
+				pop_info_h3.innerHTML = arr[n1].title;
+				pop_info_p.innerHTML = arr[n1].txt;
+			}else{
+				requestAnimationFrame(pause);
+			}
+			canvas.style.transform = "rotate("+rotate_deg+"deg)";
+			
+			//关闭弹窗按钮
+			close_btn.onclick = function(){
+				pop_up.style.display = "none";
+			}
+		}
+	</script>
+</html>
