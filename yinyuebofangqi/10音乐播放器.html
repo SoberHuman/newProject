@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 350px;
+				height: 500px;
+				background: wheat;
+				margin: 50px auto;
+			}
+			.hd{
+				height: 245px;
+				background: palevioletred;
+				position: relative;
+			}
+			.hd h3{
+				text-align: center;
+				padding: 10px 0px;
+			}
+			.hd img{
+				display: block;
+				width: 100px;
+				margin: 0 auto;
+				border-radius: 100%;
+			}
+			.icon-yinliang{
+				position: absolute;
+				top: 7px;
+				left: 10px;
+				font-size: 30px;
+			}
+			.icon-shangyishou_huaban{
+				position: absolute;
+				top: 76px;
+				left: 70px;
+				font-size: 40px;
+			}
+			.icon-xiayishou_huaban{
+				position: absolute;
+			    top: 76px;
+			    left: 240px;
+			    font-size: 40px;
+			}
+			.start{
+				position: absolute;
+			    top: 155px;
+			    left: 50%;
+			    margin-left: -20px;
+			    font-size: 40px;
+			}
+			.yl{
+				position: absolute;
+				top: 15px;
+				left: 43px;
+				display: none;
+			}
+			.pro{
+				position: absolute;
+				bottom: 20px;
+				left: 10px;
+				width: 230px;
+			}
+			.times{
+				position: absolute;
+				bottom: 17px;
+				right: 10px;
+			}
+			.ft-hd h3{
+				float: left;
+				margin-left: 10px;
+				margin-top: 10px;
+			}
+			.list{
+				margin-right: 10px;
+				float: right;
+				margin-top: 10px;
+			}
+			.list span{
+				font-size: 20px;
+				margin: 0px 4px;
+				font-weight: 900;
+			}
+			.list span:first-child{
+				color: red;
+			}
+			.singes-list{
+				clear: both;
+				margin-left: 10px;
+				padding-top: 10px;
+			}
+			.singes-list p{
+				line-height: 28px;
+			}
+			.singes-list p:first-child{
+				color: red;
+			}
+			
+			@keyframes logorotate{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+			}
+			
+		</style>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded",function(){
+				var prev = document.querySelector(".icon-shangyishou_huaban");
+				var next = document.querySelector(".icon-xiayishou_huaban");
+				var start = document.querySelector(".start");
+				var singes_list = document.querySelector(".singes-list");
+				var p = singes_list.querySelectorAll("p");
+				var list = document.querySelector(".list");
+				var pattern = list.querySelectorAll("span");   //播放模式
+				var hd = document.querySelector(".hd");
+				var h3 = hd.querySelector("h3");
+				var img1 = hd.querySelector("img");
+				var horn = document.querySelector(".icon-yinliang");  //喇叭
+				var yl = document.querySelector(".yl");  //音量进度条
+				var pro = document.querySelector(".pro");   //歌曲进度条
+				var times = document.querySelector(".times");
+				//循环模式
+				var icon_danqubofang = document.querySelector(".icon-danqubofang");
+				var icon_shunxubofang = document.querySelector(".icon-shunxubofang");
+				var icon_suijibofang = document.querySelector(".icon-suijibofang");
+				
+				
+				var Au = new  Audio();  //实例化一个音频
+				
+				var arr = ["video/冯提莫 - 明天你好.mp3" , "video/陈赫、郑恺 - 奔跑 (Live).mp3" , "video/林风 - 你的承诺.mp3" , "video/铃声 - 速度与激情 (铃声).mp3" , "video/汪苏泷 - 追光者 (Live).mp3" , "video/Delacey - Dream It Possible.mp3"];
+				var imgs = ["img/ftm.png","img/ch.png","img/lf.png","img/ls.webp","img/wsl.png","img/zly.png"];
+				
+				document.body.appendChild(Au);
+				
+				var play_pattern = 0;   //0单曲，1顺序 ， 2随机
+				var i = 0;
+				Au.src = arr[i];
+				img1.src = imgs[i];
+				
+				
+				
+				
+				//播放、暂停
+				start.onclick = function(){
+					
+					var vi  = Au.setAttribute("controls" , "controls");
+					//paused: 媒体是否暂停(只读)
+					//点击未放手时判断
+					if(Au.paused){  
+						Au.play();   //媒体播放
+						this.className = "start icon iconfont icon-bofang1";  //icon-bofang1是font/demo_index.html下的一个播放按键
+					}else{
+						Au.pause();  //媒体暂停,没有d
+						this.className = "start icon iconfont icon-bofang2";  //icon-bofang2是font/demo_index.html下的一个暂停按键
+					}
+				}
+				
+				
+				
+				
+				
+				function init(){
+					Au.src = arr[i];
+					Au.play();
+					musicNameStyle();//上一首、下一首、播放键使用
+				
+					start.className = "start icon iconfont icon-bofang1";
+//					img.style.animation="none";
+					setTimeout(function(){   //30s旋转一圈
+						img1.style.animation = "logorotate 30s linear infinite"
+					},30)
+				}
+				//下一首
+				next.onclick = function(){
+					i++;
+					if(i == arr.length){
+						i = 0;
+					}
+					init();				
+				}
+				
+				
+				//上一首
+				prev.onclick = function(){
+					i--;
+					if(i < 0){
+						i = arr.length-1;
+					}
+					init();
+					console.log(1)
+				}
+				
+				//歌曲名字变红，歌曲名改变
+				function musicNameStyle(){
+					for(var x = 0;x < p.length;x++){
+						if(x == i){  //当x等于正在播放的歌曲
+							p[x].style.color = "red";
+							h3.innerHTML = p[x].innerHTML;
+						}else{
+							p[x].style.color = "black";
+						}
+					}
+				}
+				
+				
+				//ended:当媒体暂停时产生该事件
+				//循环,已设置默认为0（顺序循环）
+				Au.onended = function(){
+					if(play_pattern == 0){
+						//单曲
+						Au.play();
+					}else if(play_pattern == 1){
+						//顺序
+						i++;
+						if(i == arr.length){
+							i = 0;
+						}
+						init();
+					}else{
+						//随机
+						i = Math.floor(Math.random()*arr.length);
+						init();
+					}
+				}
+				
+				//修改播放模式
+				for(var j = 0 ; j < pattern.length ; j++){
+					pattern[j].index = j;
+					
+					pattern[j].onclick = function(){
+						play_pattern = this.index;  //把默认值，设置为点击的那个
+						for(var k = 0;k < pattern.length;k++){
+							pattern[k].style.color = "black";  //把所有的span都变成黑色
+						}
+						this.style.color = "red";   //再把点击的那个变红色
+					}
+				}
+				
+				
+				
+				
+				
+				
+				
+				//点击音量图标
+				//getComputedStyle() 方法用于获取指定元素的 CSS 样式。
+				//获取的样式是元素在浏览器中最终渲染效果的样式。
+				horn.onclick = function(){
+					if(getComputedStyle(yl , null)["display"] == "none"){
+						yl.style.display = "block";
+					}else{
+						yl.style.display = "none";
+					}
+				}
+				
+				//修改音量
+				//oninput 事件在用户输入时触发。
+				yl.oninput = function(){
+					//volume: 0.0-1.0的音量相对值
+					Au.volume = yl.value/100;
+				}
+				
+				
+				//图片
+				//当媒体暂停时产生该事件
+				Au.onpause = function(){
+					img1.style.animationPlayState = "paused";  //控制播放位置发生改变时的图片暂停    //animationPlayState指定动画是否正在运行或已暂停。
+				}
+				
+				//时间
+				//timeupdate：当前播放位置发生改变时产生该事件
+				Au.ontimeupdate = function(){
+					//currentTime: 开始到播放现在所用的时间
+					//duration: 媒体总时间(只读)
+					
+					var s0 = Math.ceil(Au.duration);   //记录单位秒
+					var s1 = Math.ceil(Au.currentTime);	//记录单位秒
+					
+					if(isNaN(s0)){  //如果媒体总时间是NaN
+						times.innerHTML = "资源加载中...";
+						//控制进度条位置
+						pro.value = 0;
+					}else{
+						times.innerHTML = fn(s1) + "/" + fn(s0);
+						
+						//控制进度条位置
+						pro.value = Math.floor(s1/s0*100);
+					}
+					
+					img1.style.animationPlayState="running";    //控制播放位置发生改变时的图片运动
+				}
+				
+				//秒-->分：秒格式
+				function fn(n){
+					//226秒-->3分46秒
+					var m = Math.floor(n/60);//分
+					var s = n % 60;   //秒   //n-m*60
+					
+					if(m < 10){
+						m = "0" + m;
+					}
+					if(s < 10){
+						s = "0" + s;
+					}
+					return m + ":" + s;
+				}
+				
+				
+				//移动进度条修改歌曲进度
+				pro.oninput = function(){
+					Au.currentTime = pro.value/100*Math.ceil(Au.duration);
+					console.log(pro);
+				}
+				
+				
+			})
+		</script>
+	</head>
+	<body>
+		<article class="box">
+			<header class="hd">
+				<h3>冯提莫 - 明天你好.mp3</h3>
+				<img src="../CSS学习/img/boy.png" />
+				<span class="icon iconfont icon-yinliang"></span>
+				<input class="yl" type="range" min="0" max="100" value="100"/>
+				<span class="icon iconfont icon-shangyishou_huaban"></span>
+				<span class="icon iconfont icon-xiayishou_huaban"></span>
+				<span class="icon iconfont start icon-bofang2"></span>
+				<input class="pro" type="range" min="0" max="100" value="0"/>
+				<p class="times">00:00/03:34</p>
+			</header>
+			<footer>
+				<header class="ft-hd">
+					<h3>歌曲列表</h3>
+					<section class="list" data-name = "1">
+						<span class="icon iconfont icon-danqubofang red"></span>
+						<span class="icon iconfont icon-shunxubofang"></span>
+						<span class="icon iconfont icon-suijibofang"></span>
+					</section>
+				</header>
+				<section class="singes-list">
+					<p>冯提莫 - 明天你好.mp3</p>
+					<p>陈赫、郑恺 - 奔跑 (Live).mp3</p>
+					<p>林风 - 你的承诺.mp3</p>
+					<p>铃声 - 速度与激情 (铃声).mp3</p>
+					<p>汪苏泷 - 追光者 (Live).mp3</p>
+					<p>Delacey - Dream It Possible.mp3</p>
+				</section>
+			</footer>
+		</article>
+	</body>
+</html>
