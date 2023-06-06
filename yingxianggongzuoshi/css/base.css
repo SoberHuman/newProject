@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 500;
+}
+.box1{
+	height: 100vh;
+	text-align: center;
+	background: url(../img/影像工作室/ia_100000016.jpg) no-repeat fixed center top/100% 100%;
+}
+.nav{
+	/*font-size: 0;*/
+	padding-top: 160px;
+	position: relative;
+	z-index: 10;
+}
+.nav a{
+	color: white;
+	margin: 0px 2%;
+	/*font-size: 16px;*/
+	border-left: solid 1px white;
+	border-right: solid 1px white;
+	font-size: 14px;
+	padding: 0px 5px;
+	height: 14px;
+	line-height: 14px;
+	display: inline-block;
+}
+.logo{
+	margin-top: 200px;
+}
+.box6{
+	padding: 28px 0px;
+	text-align: center;
+	font-size: 12px;
+	background: white;
+}
+@media screen  and (max-width: 640px) {
+	.box1{
+		height: 90vw;
+		background: url(../img/影像工作室/ia_100000016.jpg) no-repeat fixed center top/cover;
+	}
+	.nav{
+		padding-top: 60px;
+	}
+	.logo{
+		margin-top: 80px;
+	}
+}
